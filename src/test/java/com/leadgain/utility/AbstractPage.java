@@ -328,4 +328,12 @@ public class AbstractPage<T> {
       new WebDriverWait(webDriver, waitTimeInSec)
               .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
+    
+    public void assertAndClickByScript(String locator) {
+      assertElementPresentByXpath(locator);
+      System.out.println("after assert...");
+      JavascriptExecutor executor = (JavascriptExecutor)webDriver;
+      executor.executeScript("arguments[0].click()", webDriver.findElement(By.xpath(locator)));
+      System.out.println("after click...");
+  }
 }
