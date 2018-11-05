@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.leadgain</groupId>
+	<artifactId>selenium-front-end</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>LeadGainTest-1</name>
+	<description>LeadGainTest V2</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.1.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	
+	<scm>
+        <connection>scm:https://bitbucket.org/dm_dev_team/lookinbound.git</connection>
+        <developerConnection>scm:https://bitbucket.org/dm_dev_team/lookinbound.git</developerConnection>
+        <url>https://bitbucket.org/dm_dev_team/lookinbound.git</url>
+    </scm>
+    
+	<developers>
+        <developer>
+            <id>S-SDE</id>
+            <name>Hemal Padhiar</name>
+            <email>hemal.padhiar@demandmatrix.com</email>
+            <timezone>UTC+5.30</timezone>
+        </developer>
+    </developers>
+    
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<aspectj.version>1.8.13</aspectj.version>
+	</properties>
+	<profiles>	
+		<profile>
+		    <id>dev</id>
+		    <properties>
+		        <activatedProperties>dev</activatedProperties>
+		    </properties>
+		    <activation>
+		        <activeByDefault>true</activeByDefault>
+		    </activation>
+		</profile>
+		<profile>
+		    <id>qa</id>
+		    <properties>
+		        <activatedProperties>qa</activatedProperties>
+		    </properties>
+		</profile>
+		<profile>
+		    <id>prod</id>
+		    <properties>
+		        <activatedProperties>prod</activatedProperties>
+		    </properties>
+		</profile>
+	</profiles>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-chrome-driver</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-edge-driver</artifactId>
+		    <!-- <version>2.47.1</version> -->
+		</dependency>
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-firefox-driver</artifactId>
+		    <!-- <version>3.13.0</version> -->
+		</dependency>
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-safari-driver</artifactId>
+		    <!-- <version>3.13.0</version> -->
+		</dependency>
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-ie-driver</artifactId>
+		   <!--  <version>3.13.0</version> -->
+		</dependency>
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-android-driver</artifactId>
+		    <version>2.39.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-iphone-driver</artifactId>
+		    <version>2.39.0</version>
+		</dependency>
+		
+		<dependency>
+		      <groupId>com.google.guava</groupId>
+		      <artifactId>guava</artifactId>
+		      <version>23.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-htmlunit-driver</artifactId>
+		    <version>2.52.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-opera-driver</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>com.opera</groupId>
+		    <artifactId>operadriver</artifactId>
+		    <version>1.5</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.codeborne</groupId>
+		    <artifactId>phantomjsdriver</artifactId>
+		    <version>1.2.1</version>
+		</dependency>
+		<dependency> 
+		        <groupId>junit</groupId>
+		        <artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.testng</groupId>
+		    <artifactId>testng</artifactId>
+		    <version>6.14.3</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		        <groupId>commons-logging</groupId>
+		        <artifactId>commons-logging</artifactId>
+		        <version>1.2</version>
+		</dependency>
+		<dependency>
+		        <groupId>net.sourceforge.javacsv</groupId>
+		        <artifactId>javacsv</artifactId>
+		        <version>2.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>io.qameta.allure</groupId>
+		    <artifactId>allure-testng</artifactId>
+		    <version>2.0-BETA19</version>
+		</dependency>
+		 <dependency>
+            <groupId>com.relevantcodes</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>2.41.2</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.yandex.qatools.ashot</groupId>
+            <artifactId>ashot</artifactId>
+            <version>1.5.4</version>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.0-BETA19</version>
+        </dependency>
+	</dependencies>
+
+	<build>
+		
+		<plugins>
+			<!-- <plugin>
+				 <groupId>org.apache.maven.plugins</groupId>
+					  <artifactId>maven-surefire-report-plugin</artifactId>
+					  <version>2.6</version>
+					  <executions>
+					    <execution>
+					      <phase>test</phase>
+					      <goals>
+					        <goal>report-only</goal>
+					      </goals>
+					    </execution>
+					  </executions>
+			</plugin> -->
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-surefire-plugin</artifactId>
+			    <configuration>
+			        <suiteXmlFiles>
+			            <suiteXmlFile>
+			               src\test\resources\testng.xml
+			            </suiteXmlFile>
+			        </suiteXmlFiles>
+			        <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
+                    <testFailureIgnore>true</testFailureIgnore>
+			    </configuration>
+			    <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+		
+	</build>
+
+
+</project>
