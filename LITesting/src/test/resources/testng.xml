@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+    
+<!--      <class name="com.leadgain.testcase.CampaignDeleteTest"/> -->
+<!--    <class name="com.leadgain.testcase.CampaignDashboardTest"/> -->
+<!--       <class name="com.leadgain.testcase.LoginTest"/> -->
+<!--       <class name="com.leadgain.testcase.DashboardTest"/> -->
+
+<!-- 			<class name="com.leadgain.testcase.RegisterTest"/>  -->
+
+<!-- 			 <class name="com.leadgain.testcase.ChangePasswordTest"/> -->
+
+<!--  				<class name="com.leadgain.testcase.CreateCampaignTest"/> -->
+ 
+<!--   <class name="com.leadgain.testcase.UberDashboardTest"/> -->
+
+   <class name="com.leadgain.testcase.DemoTest"/>
+<!--     <class name="com.leadgain.testcase.ExitIntentTest"/>   -->
+<!--         <class name="com.leadgain.testcase.CampaignTest"/> -->
+        <!-- <class name="com.leadgain.testcase.LeadTest"/>  -->
+ 
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
