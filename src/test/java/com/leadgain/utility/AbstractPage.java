@@ -323,4 +323,9 @@ public class AbstractPage<T> {
       return count;
 
     }
+    
+    public void waitForElementVisible(String locator, int waitTimeInSec) {
+      new WebDriverWait(webDriver, waitTimeInSec)
+              .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+    }
 }
