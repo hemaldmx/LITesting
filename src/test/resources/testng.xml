@@ -13,12 +13,12 @@
 
 <!-- 			 <class name="com.leadgain.testcase.ChangePasswordTest"/> -->
 
- 				<class name="com.leadgain.testcase.CreateCampaignTest"/>
+<!--  				<class name="com.leadgain.testcase.CreateCampaignTest"/>
  <class name="com.leadgain.testcase.CampaignDashboardTest"/>
- <class name="com.leadgain.testcase.CampaignDeleteTest"/>
+ <class name="com.leadgain.testcase.CampaignDeleteTest"/> -->
 <!--   <class name="com.leadgain.testcase.UberDashboardTest"/> -->
 
-<!--    <class name="com.leadgain.testcase.DemoTest"/> -->
+   <class name="com.leadgain.testcase.DemoTest"/>
 <!--     <class name="com.leadgain.testcase.ExitIntentTest"/>   -->
         <!-- <class name="com.leadgain.testcase.CampaignTest"/> -->
         <!-- <class name="com.leadgain.testcase.LeadTest"/>  -->
