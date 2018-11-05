@@ -207,8 +207,7 @@ public class DriverFactory implements FactoryBean<WebDriver> {
                 break;
             case CHROME:
             	classLoader = getClass().getClassLoader();
-            	URL url = classLoader.getResource("C:\\Users\\hemaldevvm\\Downloads\\chromedriver/chromedriver.exe");
-                file = new File(url.getFile());
+                file = new File("C:\\Users\\hemaldevvm\\Downloads\\chromedriver/chromedriver.exe");
                 System.out.println(file.getAbsolutePath());
             	System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
                 webDriver = new ChromeDriver();
