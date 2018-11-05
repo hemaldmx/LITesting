@@ -61,7 +61,7 @@ public class CampaignTest extends BaseClassTest {
     LOGGER.info(method.getName() + " test is starting.");
     System.out.println("verifyCampaignIsStopped::");
     campaignPage.verifyCampaignState(campaignName, "Stopped");
-    campaignPage.changeCampaignState(campaignName, "Stopped");
+//    campaignPage.changeCampaignState(campaignName, "Stopped");
 
   }
 }
